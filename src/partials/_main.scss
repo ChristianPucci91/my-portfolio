@@ -35,13 +35,11 @@ body.index {
       width: 100%;
       z-index: 100;
       nav {
+        @include flex(row, space-between, center);
         width: 90%;
         min-height: 60px;
         margin: auto;
         height: auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
       }
     }
     main {
@@ -50,15 +48,9 @@ body.index {
       position: relative;
       section {
         width: calc(100% / 4);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
         div.section_link {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+        @include flex(column, center, center);
           width: 100%;
         }
         img {
@@ -77,11 +69,8 @@ body.index {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @include flex(row, space-around, center);
         min-width: 100%;
-        flex-direction: row;
       }
     }
     footer {
@@ -90,19 +79,10 @@ body.index {
       position: absolute;
       bottom: 0;
        div.icons {
-         display: flex;
-         justify-content: flex-start;
-         align-items: center;
+        @include flex(row, flex-start, center);
          width: 90%;
          margin: auto;
          min-height: 60px;
        }
     }
 }
-
-// body.about {
-//     background-image: url("https://i.pinimg.com/originals/8b/35/fe/8b35fef55fba1a201c9c7a11d3ec3d64.gif");
-//     height: 100vh;
-//     background-size: cover;
-//     background-repeat: no-repeat;
-// }
