@@ -8,20 +8,6 @@
   font-weight: bold;
 }
 
-// hover di imgs
-.section_one:hover  img,
-.section_two:hover  img,
-.section_three:hover  img,
-.section_four:hover  img {
-   opacity: 1;
-   transition:0.5s;
-   -webkit-transition: .5s ease-in-out;
-   -moz-transition: .5s ease-in-out;
-   -o-transition: .5s ease-in-out;
-   transition: .5s ease-in-out;
-}
-
-
 body.index {
     position: relative;
     background-image: url("https://media0.giphy.com/media/3o7TKLKBXz6RVuEDDO/source.gif");
@@ -57,11 +43,17 @@ body.index {
           max-width: 100%;
           height: 100%;
           opacity: 0;
-          transition:0.5s;
           -webkit-transition: .5s ease-in-out;
           -moz-transition: .5s ease-in-out;
           -o-transition: .5s ease-in-out;
           transition: .5s ease-in-out;
+        }
+        &:hover  img {
+           opacity: 1;
+           -webkit-transition: .5s ease-in-out;
+           -moz-transition: .5s ease-in-out;
+           -o-transition: .5s ease-in-out;
+           transition: .5s ease-in-out;
         }
       }
       .section_absolute {
