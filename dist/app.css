@@ -76,7 +76,7 @@ body.index footer {
   position: absolute;
   bottom: 0;
 }
-body.index footer div.icons {
+body.index footer div.social {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -84,4 +84,13 @@ body.index footer div.icons {
   width: 90%;
   margin: auto;
   min-height: 60px;
+}
+body.index footer div.social * {
+  margin-right: 15px;
+  font-size: 25px;
+  transition: transform ease-in-out 0.3s;
+}
+body.index footer div.social *:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
