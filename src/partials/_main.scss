@@ -15,6 +15,10 @@
 .section_four:hover  img {
    opacity: 1;
    transition:0.5s;
+   -webkit-transition: .5s ease-in-out;
+   -moz-transition: .5s ease-in-out;
+   -o-transition: .5s ease-in-out;
+   transition: .5s ease-in-out;
 }
 
 
@@ -62,6 +66,10 @@ body.index {
           height: 100%;
           opacity: 0;
           transition:0.5s;
+          -webkit-transition: .5s ease-in-out;
+          -moz-transition: .5s ease-in-out;
+          -o-transition: .5s ease-in-out;
+          transition: .5s ease-in-out;
         }
       }
       .section_absolute {
