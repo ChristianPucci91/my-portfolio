@@ -30,6 +30,15 @@ body.index header nav {
   margin: auto;
   height: auto;
 }
+body.index header nav .nav_links a {
+  text-decoration: none;
+  margin: 0 0 0 10px;
+  transition: color 0.5s ease-in-out;
+}
+body.index header nav .nav_links a:hover {
+  cursor: pointer;
+  color: #1b70a1;
+}
 body.index main {
   height: 100vh;
   display: flex;
@@ -37,6 +46,7 @@ body.index main {
 }
 body.index main section {
   width: calc(100% / 4);
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,7 +60,6 @@ body.index main section div.section_link {
   width: 100%;
 }
 body.index main section img {
-  max-width: 100%;
   height: 100%;
   opacity: 0;
   transition: 0.5s ease-in-out;
@@ -70,6 +79,17 @@ body.index main .section_absolute {
   align-items: center;
   min-width: 100%;
 }
+body.index main .section_absolute .section_link a {
+  font-size: 40px;
+  font-weight: 900;
+  text-decoration: none;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+  transition: color 0.5s ease-in-out;
+}
+body.index main .section_absolute .section_link a:hover {
+  color: #1b70a1;
+  cursor: pointer;
+}
 body.index footer {
   min-height: 60px;
   width: 100%;
@@ -88,9 +108,10 @@ body.index footer div.social {
 body.index footer div.social * {
   margin-right: 15px;
   font-size: 25px;
-  transition: transform ease-in-out 0.3s;
+  transition: color 0.3s ease-in-out;
 }
 body.index footer div.social *:hover {
   cursor: pointer;
   transform: scale(1.1);
+  color: #1b70a1;
 }
