@@ -1,9 +1,13 @@
+//flex
+
 @mixin flex($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
+
+// transitions
 @mixin transition($type , $time) {
   -webkit-transition: $type $time ease-in-out;
   -moz-transition: $type $time ease-in-out;
@@ -15,4 +19,15 @@
   -moz-transition: $imgTime ease-in-out;
   -o-transition: $imgTime ease-in-out;
   transition: $imgTime ease-in-out;
+}
+
+// main rules
+
+@mixin mainRules {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  color:#fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }

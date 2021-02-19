@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
+  color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
@@ -114,4 +114,28 @@ body.index footer div.social *:hover {
   cursor: pointer;
   transform: scale(1.1);
   color: #1b70a1;
+}
+
+body.about {
+  background: #000;
+}
+body.about main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+body.about main div.about_img {
+  float: left;
+  height: 100vh;
+  width: 24%;
+  border-right: 1px solid #fff;
+}
+body.about main div.about_img img {
+  height: 100%;
+  width: 100%;
+}
+body.about main div.about_info {
+  float: left;
+  height: 100vh;
+  width: 76%;
 }

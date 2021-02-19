@@ -1,12 +1,9 @@
 // regole generali
 * {
-  padding:0;
-  margin:0;
-  box-sizing: border-box;
-  color:white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
+  @include mainRules;
 }
+
+// body index
 
 body.index {
     position: relative;

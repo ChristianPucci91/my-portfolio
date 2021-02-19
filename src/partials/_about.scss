@@ -1,0 +1,25 @@
+body.about {
+  background: #000;
+
+  main {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    div.about_img {
+      float:left;
+      height: 100vh;
+      width: 24%;
+      border-right: 1px solid #fff;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    div.about_info {
+      float:left;
+      height: 100vh;
+      width: 76%;
+      // background-image: linear-gradient(to right, #0c0d0f , #000);
+    }
+  }
+}
