@@ -310,3 +310,16 @@ body.about main div.about_info div.about_info_macro .nav > i {
 body.about main div.about_info div.about_info_macro .nav > i.active {
   color: #1b70a1;
 }
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+  body.index header nav {
+    flex-direction: column;
+  }
+
+  body.index main {
+    display: block;
+  }
+  body.index main section, body.index main section img {
+    width: 100%;
+  }
+}
