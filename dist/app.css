@@ -19,6 +19,8 @@ body.index header {
   min-height: 60px;
   width: 100%;
   z-index: 100;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
+          animation: 1s ease-out 0s 1 slideInFromTop;
 }
 body.index header nav {
   display: flex;
@@ -109,6 +111,8 @@ body.index footer div.social * {
   margin-right: 15px;
   font-size: 25px;
   transition: color 0.3s ease-in-out;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromBottom;
+          animation: 1s ease-out 0s 1 slideInFromBottom;
 }
 body.index footer div.social *:hover {
   cursor: pointer;
@@ -116,8 +120,77 @@ body.index footer div.social *:hover {
   color: #1b70a1;
 }
 
+@-webkit-keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
 body.about {
   background: #000;
+}
+body.about header {
+  position: absolute;
+  min-height: 60px;
+  width: 100%;
+  z-index: 100;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
+          animation: 1s ease-out 0s 1 slideInFromTop;
+}
+body.about header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  min-height: 60px;
+  margin: auto;
+  height: auto;
+}
+body.about header nav .nav_links a {
+  text-decoration: none;
+  margin: 0 0 0 10px;
+  transition: color 0.5s ease-in-out;
+}
+body.about header nav .nav_links a:hover {
+  cursor: pointer;
+  color: #1b70a1;
 }
 body.about main {
   height: 100%;
@@ -138,4 +211,35 @@ body.about main div.about_info {
   float: left;
   height: 100vh;
   width: 76%;
+}
+body.about main div.about_info div.title {
+  margin: 40px;
+  text-align: center;
+  font-size: 23px;
+}
+body.about main div.about_info div.subtitle {
+  position: relative;
+  width: 85%;
+  margin: auto;
+}
+body.about main div.about_info div.subtitle p {
+  font-family: "Lato", sans-serif;
+  font-style: italic;
+  font-size: 18px;
+}
+body.about main div.about_info div.subtitle i.fas.fa-quote-left {
+  position: absolute;
+  left: -35px;
+  font-size: 30px;
+  top: -20px;
+}
+body.about main div.about_info div.subtitle i.fas.fa-quote-right {
+  position: absolute;
+  right: 72px;
+  font-size: 30px;
+  bottom: 10px;
+}
+body.about main div.about_info div.about_info_macro {
+  width: 100%;
+  height: 50vh;
 }
