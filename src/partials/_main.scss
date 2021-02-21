@@ -57,6 +57,9 @@ body.index {
           opacity: 1;
           @include imgs(0.5s);
         }
+        .section_link {
+          display: none;
+        }
       }
       .section_absolute {
         position: absolute;
