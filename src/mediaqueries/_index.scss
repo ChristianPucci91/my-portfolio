@@ -2,9 +2,12 @@
 
 @media all and (min-width: 320px) and (max-width: 480px) {
   body.index header nav {
-    flex-direction: column;
+    justify-content: center;
     position: fixed;
-    margin-top:10px;
+    width: 100%;
+    .name p {
+      display: none;
+    }
   }
   body.index {
 
