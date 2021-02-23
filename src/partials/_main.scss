@@ -44,9 +44,20 @@ body.index {
         width: calc(100% / 4);
         overflow: hidden;
         @include flex(column, center, center);
-        div.section_link {
+        div.section_link_lg {
         @include flex(column, center, center);
-          width: 100%;
+          position: absolute;
+        }
+        div.section_link_lg a {
+          font-size: 40px;
+          font-weight: 900;
+          text-decoration: none;
+          text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+          @include transition(color , 0.5s);
+          &:hover {
+            color:$linkColor;
+            cursor: pointer;
+          }
         }
         img {
           height: 100%;
