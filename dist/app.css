@@ -231,6 +231,9 @@ body.about main div.about_info div.title {
   text-align: center;
   font-size: 23px;
 }
+body.about main div.about_info div.title h1 span {
+  color: #1b70a1;
+}
 body.about main div.about_info div.subtitle {
   position: relative;
   width: 85%;
@@ -240,6 +243,9 @@ body.about main div.about_info div.subtitle p {
   font-family: "Lato", sans-serif;
   font-style: italic;
   font-size: 18px;
+}
+body.about main div.about_info div.subtitle p em {
+  color: #1b70a1;
 }
 body.about main div.about_info div.subtitle i.fas.fa-quote-left {
   position: absolute;
@@ -297,12 +303,14 @@ body.about main div.about_info div.about_info_macro .slider-wrapper .experiences
 }
 body.about main div.about_info div.about_info_macro .prev, body.about main div.about_info div.about_info_macro .next {
   position: absolute;
-  color: #1b70a1;
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
   font-size: 40px;
   cursor: pointer;
+}
+body.about main div.about_info div.about_info_macro .prev i, body.about main div.about_info div.about_info_macro .next i {
+  color: #1b70a1;
 }
 body.about main div.about_info div.about_info_macro .next {
   left: auto;
