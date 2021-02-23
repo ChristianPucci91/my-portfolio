@@ -51,6 +51,9 @@ body.about {
         margin: 40px;
         text-align: center;
         font-size: 23px;
+        h1 span {
+          color:$linkColor;
+        }
       }
       div.subtitle {
         position:relative;
@@ -60,6 +63,9 @@ body.about {
          font-family: 'Lato', sans-serif;
          font-style: italic;
          font-size: 18px;
+         em{
+           color:$linkColor;
+         }
         }
         i.fas.fa-quote-left {
           position: absolute;
@@ -117,12 +123,14 @@ body.about {
         }
         .prev, .next {
           position: absolute;
-          color: $linkColor;
           top: 50%;
           left: 10%;
           transform: translateY(-50%);
           font-size: 40px;
           cursor: pointer;
+          i {
+            color: $linkColor;
+          }
         }
         .next {
           left: auto;
