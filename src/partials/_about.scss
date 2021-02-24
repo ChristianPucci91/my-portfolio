@@ -57,25 +57,24 @@ body.about {
       }
       div.subtitle {
         position:relative;
-        width: 85%;
+        width: 80%;
         margin: auto;
         p {
          font-family: 'Lato', sans-serif;
-         font-style: italic;
-         font-size: 18px;
+         font-size: 16px;
          em{
            color:$linkColor;
          }
         }
         i.fas.fa-quote-left {
           position: absolute;
-          left: -35px;
+          left: -40px;
           font-size: 30px;
           top: -20px;
         }
         i.fas.fa-quote-right {
           position: absolute;
-          right: 65px;
+          right: 105px;
           font-size: 30px;
           bottom: 10px;
         }
