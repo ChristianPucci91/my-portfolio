@@ -28,6 +28,7 @@ body.index {
         .nav_links a {
           text-decoration: none;
           margin:0 0 0 10px;
+          text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
           @include transition(color , 0.5s);
           &:hover {
             cursor: pointer;

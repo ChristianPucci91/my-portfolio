@@ -1,0 +1,94 @@
+// regole generali
+* {
+  @include mainRules;
+}
+
+// body training
+body.training {
+  background: #000;
+  header {
+    position: absolute;
+    min-height: 60px;
+    width: 100%;
+    z-index: 100;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    nav {
+      @include flex(row, space-between, center);
+      width: 90%;
+      min-height: 60px;
+      margin: auto;
+      height: auto;
+      .nav_links a {
+        text-decoration: none;
+        margin:0 0 0 10px;
+        @include transition(color , 0.5s);
+        &:hover {
+          cursor: pointer;
+          color:$linkColor;
+        }
+      }
+    }
+  }
+  main {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    div.about_img {
+      height: 100vh;
+      width: 25%;
+      border-right: 1px solid $linkColor;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    div.about_info_macro {
+      width: 75%;
+      max-height: 100vh;
+      overflow-y:scroll;
+      padding-top: 80px;
+      div.title {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 40px;
+        span {
+          color:$linkColor;
+        }
+      }
+      div.box {
+        width: 80%;
+        margin: auto;
+        padding: 0 0 20px 0;
+        div.box_title {
+          @include flex(row, flex-start, center);
+          margin:20px;
+          img {
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+        }
+        div.box_subtitle {
+          width: 80%;
+          margin:auto;
+          h3 {
+            margin:10px 0;
+          }
+          p {
+            margin:10px 0;
+          }
+          ul {
+            margin:40px;
+            li {
+              margin:5px 0;
+            }
+          }
+          span,strong {
+            color:$linkColor;
+          }
+        }
+      }
+    }
+  }
+}

@@ -35,6 +35,7 @@ body.index header nav {
 body.index header nav .nav_links a {
   text-decoration: none;
   margin: 0 0 0 10px;
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
   transition: color 0.5s ease-in-out;
 }
 body.index header nav .nav_links a:hover {
@@ -214,7 +215,7 @@ body.about main {
 body.about main div.about_img {
   float: left;
   height: 100vh;
-  width: 24%;
+  width: 25%;
   border-right: 1px solid #1b70a1;
 }
 body.about main div.about_img img {
@@ -224,7 +225,7 @@ body.about main div.about_img img {
 body.about main div.about_info {
   float: left;
   height: 100vh;
-  width: 76%;
+  width: 75%;
 }
 body.about main div.about_info div.title {
   margin: 40px;
@@ -379,7 +380,7 @@ body.projects main {
 body.projects main div.about_img {
   float: left;
   height: 100vh;
-  width: 24%;
+  width: 25%;
   border-right: 1px solid #1b70a1;
 }
 body.projects main div.about_img img {
@@ -389,7 +390,7 @@ body.projects main div.about_img img {
 body.projects main div.about_info {
   float: left;
   height: 100vh;
-  width: 76%;
+  width: 75%;
 }
 body.projects main div.about_info div.title {
   margin: 40px;
@@ -477,6 +478,111 @@ body.projects main div.about_info div.about_info_macro_bottom div.project:hover 
 }
 body.projects main div.about_info div.about_info_macro_bottom div.project:hover > div.project_img img {
   opacity: 1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+body.training {
+  background: #000;
+}
+body.training header {
+  position: absolute;
+  min-height: 60px;
+  width: 100%;
+  z-index: 100;
+  -webkit-animation: 1s ease-out 0s 1 slideInFromTop;
+          animation: 1s ease-out 0s 1 slideInFromTop;
+}
+body.training header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  min-height: 60px;
+  margin: auto;
+  height: auto;
+}
+body.training header nav .nav_links a {
+  text-decoration: none;
+  margin: 0 0 0 10px;
+  transition: color 0.5s ease-in-out;
+}
+body.training header nav .nav_links a:hover {
+  cursor: pointer;
+  color: #1b70a1;
+}
+body.training main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+}
+body.training main div.about_img {
+  height: 100vh;
+  width: 25%;
+  border-right: 1px solid #1b70a1;
+}
+body.training main div.about_img img {
+  height: 100%;
+  width: 100%;
+}
+body.training main div.about_info_macro {
+  width: 75%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  padding-top: 80px;
+}
+body.training main div.about_info_macro div.title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+body.training main div.about_info_macro div.title span {
+  color: #1b70a1;
+}
+body.training main div.about_info_macro div.box {
+  width: 80%;
+  margin: auto;
+  padding: 0 0 20px 0;
+}
+body.training main div.about_info_macro div.box div.box_title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+}
+body.training main div.about_info_macro div.box div.box_title img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+body.training main div.about_info_macro div.box div.box_subtitle {
+  width: 80%;
+  margin: auto;
+}
+body.training main div.about_info_macro div.box div.box_subtitle h3 {
+  margin: 10px 0;
+}
+body.training main div.about_info_macro div.box div.box_subtitle p {
+  margin: 10px 0;
+}
+body.training main div.about_info_macro div.box div.box_subtitle ul {
+  margin: 40px;
+}
+body.training main div.about_info_macro div.box div.box_subtitle ul li {
+  margin: 5px 0;
+}
+body.training main div.about_info_macro div.box div.box_subtitle span, body.training main div.about_info_macro div.box div.box_subtitle strong {
+  color: #1b70a1;
 }
 
 @media all and (min-width: 320px) and (max-width: 480px) {
