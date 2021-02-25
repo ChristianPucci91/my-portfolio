@@ -557,7 +557,9 @@ body.projects main div.about_info div.about_info_macro_bottom div.project:hover 
     padding-top: 100px;
   }
   body.about main div.about_info div.about_info_macro .slider-wrapper div.nav {
-    padding: 0;
+    bottom: -30px;
+    width: 80%;
+    text-align: center;
   }
   body.about main div.about_info div.about_info_macro .slider-wrapper .experiences div.active h1 {
     font-size: 20px;
@@ -576,5 +578,37 @@ body.projects main div.about_info div.about_info_macro_bottom div.project:hover 
   }
   body.about main div.about_info div.subtitle i {
     display: none;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+  body.projects header nav {
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+  }
+  body.projects header nav .name p {
+    display: none;
+  }
+
+  body.projects main div.about_img {
+    display: none;
+  }
+  body.projects main div.about_info {
+    width: 100%;
+    height: 100%;
+  }
+  body.projects main div.about_info div.title h1 {
+    font-size: 21px;
+  }
+  body.projects main div.about_info div.about_info_macro_top {
+    height: 45vh;
+    margin-top: 80px;
+  }
+  body.projects main div.about_info div.about_info_macro_bottom {
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  body.projects main div.about_info div.about_info_macro_bottom div.project {
+    width: 45%;
   }
 }
