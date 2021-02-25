@@ -557,7 +557,7 @@ body.projects main div.about_info div.about_info_macro_bottom div.project:hover 
     padding-top: 100px;
   }
   body.about main div.about_info div.about_info_macro .slider-wrapper div.nav {
-    bottom: -30px;
+    bottom: -70px;
     width: 80%;
     text-align: center;
   }
@@ -567,10 +567,17 @@ body.projects main div.about_info div.about_info_macro_bottom div.project:hover 
   body.about main div.about_info div.about_info_macro .slider-wrapper .experiences div.active h3 {
     text-align: center;
     font-size: 15px;
-    margin-top: 40px;
+    margin: 20px 0;
+    padding: 10px;
   }
   body.about main div.about_info div.about_info_macro .slider-wrapper .experiences div.active p {
     text-align: center;
+  }
+  body.about main div.about_info div.about_info_macro .slider-wrapper .experiences div.active ul li {
+    font-size: 14px;
+  }
+  body.about main div.about_info div.about_info_macro .prev, body.about main div.about_info div.about_info_macro .next {
+    top: 43%;
   }
   body.about main div.about_info div.title {
     font-size: 20px;
@@ -598,7 +605,10 @@ body.projects main div.about_info div.about_info_macro_bottom div.project:hover 
     height: 100%;
   }
   body.projects main div.about_info div.title h1 {
-    font-size: 21px;
+    font-size: 25px;
+  }
+  body.projects main div.about_info div.subtitle p {
+    font-size: 16px;
   }
   body.projects main div.about_info div.about_info_macro_top {
     height: 45vh;
