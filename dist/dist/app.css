@@ -533,3 +533,48 @@ body.projects main div.about_info div.about_info_macro_bottom div.project:hover 
     align-items: center;
   }
 }
+@media all and (min-width: 320px) and (max-width: 480px) {
+  body.about header nav {
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+  }
+  body.about header nav .name p {
+    display: none;
+  }
+
+  body.about main div.about_img {
+    display: none;
+  }
+  body.about main div.about_info {
+    width: 100%;
+    height: 100%;
+  }
+  body.about main div.about_info div.about_info_macro {
+    height: 100vh;
+  }
+  body.about main div.about_info div.about_info_macro .slider-wrapper {
+    padding-top: 100px;
+  }
+  body.about main div.about_info div.about_info_macro .slider-wrapper div.nav {
+    padding: 0;
+  }
+  body.about main div.about_info div.about_info_macro .slider-wrapper .experiences div.active h1 {
+    font-size: 20px;
+  }
+  body.about main div.about_info div.about_info_macro .slider-wrapper .experiences div.active h3 {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 40px;
+  }
+  body.about main div.about_info div.about_info_macro .slider-wrapper .experiences div.active p {
+    text-align: center;
+  }
+  body.about main div.about_info div.title {
+    font-size: 20px;
+    margin: 60px;
+  }
+  body.about main div.about_info div.subtitle i {
+    display: none;
+  }
+}

@@ -4,6 +4,15 @@ $(document).ready(function () {
   $(".next").click(nextImg);
   $(".prev").click(prevImg);
 
+  $(document).keydown(function(press) {
+     if (event.keyCode == 39) {
+         nextImg()
+     } else if (event.keyCode == 37) {
+         prevImg();
+     }
+  });
+
+
   function nextImg() {
 
     var imgActive = $("div.active");
