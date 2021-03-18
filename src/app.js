@@ -1,4 +1,6 @@
 
+
+
 $(document).ready(function () {
 
   $(".next").click(nextImg);

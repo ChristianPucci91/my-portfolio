@@ -1,0 +1,25 @@
+@media all and (min-width: 320px) and (max-width: 480px) {
+
+  body.training {
+    header {
+      background: #000;
+      nav {
+        div.name {
+          display: none;
+        }
+        div.nav_links {
+          margin:auto;
+        }
+      }
+    }
+    main {
+      div.about_img{
+        display: none;
+      }
+      div.about_info_macro{
+        width: 100%;
+      }
+    }
+  }
+
+}
